@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+#team-container {
+  width: 90%;
+  max-width: 500px; /* Increased for larger phones */
+}
+
+.team-member {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px; /* Increased padding */
+  margin-bottom: 15px; /* Increased margin */
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  padding: 10px; /* Increased padding for touch friendliness */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px; /* Larger font for readability */
+}
+
+button {
+  padding: 15px 20px; /* Increased padding for easier tapping */
+  margin-top: 15px; /* Increased margin */
+  border: 10px solid #333; /* 'solid' is the border-style and '#333' is a shade of black for the border-color */
+  border-radius: 5px;
+  background-color: yellow;
+  color: black;
+  font-size: 18px; /* Increased font size */
+  cursor: pointer;
+  font-weight: bold; /* Make the font bold */
+}
+
+
+@media screen and (max-width: 600px) {
+  /* Additional styles for very small screens */
+  .team-member {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  select {
+    width: 100%; /* Full width on small screens */
+    margin-top: 10px; /* Space between label and dropdown */
+  }
+}
+
+#team-composition {
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#team-composition p {
+  margin: 5px 0;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap; /* Allow the names to wrap onto the next line */
+  gap: 5px; /* Spacing between names */
+}
+
+.name {
+  /* Common styles for name tags */
+  display: inline-block;
+  border-radius: 3px;
+  padding: 2px 6px;
+  margin: 2px;
+  color: #fff; /* White text for better contrast */
+  box-sizing: border-box;
+}
+
+.attacker {
+  background-color: rgb(228, 228, 133); /* Red for attackers */
+  color: black;
+}
+
+.defender {
+  background-color: yellow; /* Blue for defenders */
+  color: black;
+}
+
+.goalkeeper {
+  background-color: #34BEE5; /* Green for goalkeepers */
+  color: black;
+}
+
+
+#team-composition strong {
+  color: #333;
+  flex-basis: 100%; /* Ensure labels are on their own line */
+  margin-bottom: 5px; /* Space after the label */
+}
+
